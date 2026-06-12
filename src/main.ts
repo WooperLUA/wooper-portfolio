@@ -9,5 +9,6 @@ const appArchive = uArchive<{theme : Theme}>('appArchive',uState({
 
 new AtlasRouter({
   rootId: 'app',
+  basePath : '/wooper-portfolio',
   routes: [{ path: '/', view: AppView }]
 });
