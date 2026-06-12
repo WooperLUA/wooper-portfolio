@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import path from 'path';
 import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
+  base: '/wooper-portfolio/',
   server: { port: 5173 },
   plugins: [
     tailwindcss(),
