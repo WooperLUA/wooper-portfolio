@@ -15,6 +15,7 @@ export const Background = () =>
             autoplay: true,
             muted: true,
             loop: true,
+            playsInline: true,
             className: () => `w-full h-full object-cover absolute inset-0 transition-all duration-500 ${
                 appArchive.theme === 'light' ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`
@@ -26,6 +27,7 @@ export const Background = () =>
             autoplay: true,
             muted: true,
             loop: true,
+            playsInline: true,
             className: () => `w-full h-full object-cover absolute inset-0 transition-all duration-500 ${
                 appArchive.theme === 'dark' ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`
