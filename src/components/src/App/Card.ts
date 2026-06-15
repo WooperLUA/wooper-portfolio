@@ -43,7 +43,7 @@ export const Card = ({
                 }),
                 Div({className: 'w-full mt-auto pt-4 relative z-10 flex items-center justify-center'},
                     Button({
-                            className: `inline-flex border-1 border-zinc-400 transition-all overflow-hidden backdrop-blur-md w-75 h-12 
+                            className: `appearance-none bg-transparent inline-flex border-1 border-zinc-400 transition-all overflow-hidden backdrop-blur-md w-75 h-12 
                             rounded-full pt-[1px] pr-[1px] pb-[1px] pl-[1px] relative
                             items-center
                             dark:text-white
