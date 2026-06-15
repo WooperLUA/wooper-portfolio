@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600&display=swap');
 @import "tailwindcss";
 @plugin 'tailwind-scrollbar';
+
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
