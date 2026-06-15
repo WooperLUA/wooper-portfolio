@@ -19,7 +19,7 @@ export const Card = ({
                          link,
                          textColor,
                          buttonColor,
-    buttonTextColor,
+                         buttonTextColor,
                      }: CardProps) =>
 {
     const appArchive = uArchive('appArchive', {
@@ -38,7 +38,9 @@ export const Card = ({
                     textContent: header
                 }),
                 //Img({className: 'rounded-full w-full h-full object-cover', src: image}),
-                P({className: 'text-sm dark:text-white/70 text-black/70 mt-0.5', textContent: description}),
+                P({
+                    className: `text-sm line-clamp-3 md:line-clamp-none break-words dark:text-white/70 text-black/70 mt-0.5`, textContent: description
+                }),
                 Div({className: 'w-full mt-auto pt-4 relative z-10 flex items-center justify-center'},
                     Button({
                             className: `inline-flex border-1 border-zinc-400 transition-all overflow-hidden backdrop-blur-md w-75 h-12 

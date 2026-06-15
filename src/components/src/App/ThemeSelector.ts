@@ -1,18 +1,18 @@
 import {Div, I, Input, Label} from "atlas-web/dom";
-import {createArchive, createEffect} from "atlas-web";
+import { uArchive, uEffect} from "atlas-web";
 
 export const ThemeSelector = () =>
 {
     type Theme = 'light' | 'dark';
 
-    const appArchive = createArchive<{theme : Theme}>('appArchive',{
+    const appArchive = uArchive<{theme : Theme}>('appArchive',{
         theme : 'light',
     })
 
     const toggleChecked = () => appArchive.theme === 'dark'
     const handleThemeSwitch = () => appArchive.theme = appArchive.theme === 'light' ? 'dark' : 'light';
 
-    createEffect(() => {
+    uEffect(() => {
         if (appArchive.theme === 'dark') {
             document.documentElement.classList.add('dark');
         }

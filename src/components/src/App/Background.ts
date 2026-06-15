@@ -1,5 +1,6 @@
-import {Div, Iframe} from "atlas-web/dom";
+import {Div, Iframe, Video} from "atlas-web/dom";
 import {uArchive} from "atlas-web";
+import {darkBackground, lightBackground} from '@assets'
 
 export const Background = () =>
 {
@@ -7,22 +8,25 @@ export const Background = () =>
         theme: 'light',
     })
 
-    return Div({className: 'spline-container absolute top-0 left-0 w-full h-full -z-10 pointer-events-none'},
+    return Div({className: 'spline-container absolute top-0 left-0 w-full h-full -z-10 pointer-events-none transform-gpu'},
 
-        Iframe({
-            src:         'https://my.spline.design/twistcopy-CPActtgUfoQoOToZfH4Pt18Q',
-            frameBorder: '0', width: '100%', height: '100%',
-            className:   () => `absolute inset-0 transition-all duration-500 ${
+        Video({
+            src:       lightBackground,
+            autoplay: true,
+            muted: true,
+            loop: true,
+            className: () => `w-full h-full object-cover absolute inset-0 transition-all duration-500 ${
                 appArchive.theme === 'light' ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`
         }),
 
 
-        Iframe({
-            src:         'https://my.spline.design/glasswave-6HLEnvJfCRsq1aKT2xqlgme7',
-            frameBorder: '0', width: '100%', height: '100%',
-            style : {filter : 'brightness(75%)'},
-            className:   () => `absolute inset-0 transition-all duration-500 ${
+        Video({
+            src:       darkBackground,
+            autoplay: true,
+            muted: true,
+            loop: true,
+            className: () => `w-full h-full object-cover absolute inset-0 transition-all duration-500 ${
                 appArchive.theme === 'dark' ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`
         }),
