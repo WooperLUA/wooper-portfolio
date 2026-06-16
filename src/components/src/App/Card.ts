@@ -49,7 +49,7 @@ export const Card = ({
                             dark:text-white
                             hover:scale-105 hover:shadow-xl hover:border-2 ${buttonColor} ${buttonTextColor}
                             active:scale-95`,
-                            onClick:   () =>
+                            onclick:   () =>
                                        {
                                            window.open(link, '_blank')?.focus();
                                        }

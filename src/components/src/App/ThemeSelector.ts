@@ -24,7 +24,7 @@ export const ThemeSelector = () =>
     return Div({className : 'p-4'},
         Label({className: 'inline-flex items-center cursor-pointer'},
             I({className: `fa-solid fa-sun text-w-5 h-5 dark:text-white`, ariaHidden: 'true'}),
-            Input({className: 'sr-only peer', type: 'checkbox', checked : () => toggleChecked(), onChange: handleThemeSwitch}),
+            Input({className: 'sr-only peer', type: 'checkbox', checked : () => toggleChecked(), onchange: handleThemeSwitch}),
             Div({className: `  relative mx-3 h-6 w-10 rounded-full
                 bg-violet-700
                 transition-colors

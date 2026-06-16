@@ -6,7 +6,7 @@
       "name": "wooper-portfolio",
       "dependencies": {
         "@tailwindcss/vite": "^4.3.0",
-        "atlas-web": "^2.10.1",
+        "atlas-web": "^2.13.1",
         "tailwind-scrollbar": "^4.0.2",
         "tailwindcss": "^4.3.0",
       },
@@ -166,7 +166,7 @@
 
     "@types/prismjs": ["@types/prismjs@1.26.6", "", {}, "sha512-vqlvI7qlMvcCBbVe0AKAb4f97//Hy0EBTaiW8AalRnG/xAN5zOiWWyrNqNXeq8+KAuvRewjCVY1+IPxk4RdNYw=="],
 
-    "atlas-web": ["atlas-web@2.10.1", "", {}, "sha512-/Zi2/re17WHy7iIXry0SYU2Yi+ZOoFTtKWuncCBTBkgsvjqAY1DpNq5j253/b4IiF+HCrDinkAIRXQT3tlmsxw=="],
+    "atlas-web": ["atlas-web@2.13.1", "", {}, "sha512-Ri6c6hOaeOR1UVuK0kpZO22HX5BTwkM93TBwb4uENIVdtiVROlcq76vghdaNZ62ICVwEJP+R2cEO6K7nmuOFoA=="],
 
     "clsx": ["clsx@2.1.1", "", {}, "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA=="],
 

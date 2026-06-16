@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
-    "atlas-web": "^2.10.1",
+    "atlas-web": "^2.13.1",
     "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4.3.0"
   },
