@@ -1,4 +1,4 @@
-import {Div, H1, _Structure, H2, _Loop, Span, Footer} from 'atlas-web/dom';
+import {Div, H1, _Structure, H2, _Loop, Span, Footer, H3} from 'atlas-web/dom';
 import {Background, Card, ThemeSelector} from "@components";
 import {uState} from "atlas-web";
 
@@ -34,13 +34,14 @@ export const AppView = () =>
                 buttonTextColor: 'hover:text-sky-600 dark:hover:text-sky-500',
             },
             {
-                header:          'Quartz CSS',
-                description:     'A sleek, modern CSS framework designed to give your projects a clean and elegant look with minimal hassle.',
+                header:          'MetaScript',
+                description:     `MetaScript is a preprocessor / transpiler that adds simple metaprogramming features to
+                                  Javascript, Typescript, JSX & TSX`,
                 image:           '',
-                link:            'https://github.com/WooperLUA/quartz_css',
-                textColor:       'text-indigo-600 dark:text-indigo-500',
-                buttonColor:     'hover:border-indigo-600 dark:hover:border-indigo-500',
-                buttonTextColor: 'hover:text-indigo-700 dark:hover:text-indigo-600',
+                link:            'https://github.com/WooperLUA/meta-script',
+                textColor:       'text-yellow-600 dark:text-yellow-300',
+                buttonColor:     'hover:border-yellow-600 dark:hover:border-yellow-300',
+                buttonTextColor: 'hover:text-yellow-600 dark:hover:text-yellow-300',
             },
         ]
     })
@@ -55,7 +56,7 @@ export const AppView = () =>
                 textContent: 'Wooper\'s Portfolio'
             }),
             H2({
-                    className: 'md:text-3xl text-2xl text-center dark:text-white/60 text-black/60 mt-5 leading-[0.9] tracking-tighter',
+                    className: 'md:text-3xl text-2xl text-center dark:text-white/60 text-black/60 mt-5 mb-[4rem] leading-[0.9] tracking-tighter',
                 },
                 'An', Span({
                     className:   'text-blue-600 dark:text-blue-500 font-semibold',
@@ -66,7 +67,16 @@ export const AppView = () =>
                     textContent: ' genius '
                 }), 'admires simplicity.',
             ),
-            Div({className: `mt-5 p-10 gap-5 grid md:grid-cols-2 grid-cols-1 items-center justify-center max-h-[calc(100vh-20rem)] overflow-y-auto`},
+            H3({
+                    className: `md:text-3xl text-2xl text-center  bg-black-gradient dark:bg-white-gradient 
+                                bg-clip-text text-transparent mt-5 pb-2 leading-[0.9] tracking-tighter`,
+                },
+                'A few examples of my', Span({
+                    className:   'text-violet-600 dark:text-violet-500 font-semibold tracking-normal',
+                    textContent: ' work.'
+                })
+            ),
+            Div({className: `mt-2 p-10 gap-5 grid md:grid-cols-2 grid-cols-1 items-center justify-center max-h-[calc(100vh-20rem)] overflow-y-auto`},
                 _Loop(() => ls.cards,
                     (item) => Card({
                         header:          item?.header,
